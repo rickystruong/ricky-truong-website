@@ -23,13 +23,3 @@ window.addEventListener("scroll", () => {
     }
     lastScrollY = window.scrollY;
 });
-
-// Scroll Behavior at Top and Bottom of Page
-document.body.addEventListener('touchstart', function(event) {
-    if (window.scrollY === 0) {
-        event.preventDefault();
-    }
-    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
-        event.preventDefault();
-    }
-}, { passive: false });
