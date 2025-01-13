@@ -104,7 +104,7 @@ p{
 
 /* Sections */
 section{
-    height:100vh;
+    height:100%;
     width:100%;
     display:grid;
     place-items:center;
@@ -128,10 +128,10 @@ section .container .text{
 }
 #about{
     padding-top:var(--nav-height);
-    height:calc(100vh - var(--nav-height));
+    height:calc(100% - var(--nav-height));
 }
 #interests{
-    height:110vh;
+    height:110%;
     background-color:var(--space-grey);
 }
 
