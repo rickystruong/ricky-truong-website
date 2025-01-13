@@ -110,6 +110,7 @@ section{
     display:grid;
     place-items:center;
     align-content:center;
+    overscroll-behavior:none;
 }
 section .content{
     display:grid;
