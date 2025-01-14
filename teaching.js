@@ -15,6 +15,9 @@ const nav = document.querySelector(".nav");
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
+    if(Math.abs(lastScrollY - window.scrollY) < 50){
+        return;
+    }
     if(lastScrollY < window.scrollY){
         nav.classList.add("nav-hidden")
     }
