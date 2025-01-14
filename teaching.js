@@ -11,11 +11,26 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Navigation Bar
+function getScrollThreshold(){
+    const screenHeight = window.innerHeight;
+    if(screenHeight < 600){
+        return 25;
+    }
+    else if (screenHeight < 1000){
+        return 50;
+    }
+    else{
+        return 150;
+    }
+}
+
 const nav = document.querySelector(".nav");
+let threshold = getScrollThreshold();
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
-    if(Math.abs(lastScrollY - window.scrollY) < 50){
+    threshold = getScrollThreshold();
+    if(Math.abs(lastScrollY - window.scrollY) < threshold){
         return;
     }
     if(lastScrollY < window.scrollY){
