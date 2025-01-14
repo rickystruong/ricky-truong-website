@@ -218,7 +218,7 @@ section .container .right{
     }
     /* Text */
     h1{
-        font-size:17px;
+        font-size:18px;
     }
     h2{
         font-size:13px;
@@ -227,7 +227,7 @@ section .container .right{
         font-size:9px;
     }
     .nav-link li a{
-        font-size:11px;
+        font-size:12px;
     }
     /* Navigation Bar */
     .nav-link li{
