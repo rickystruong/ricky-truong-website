@@ -13,14 +13,11 @@ hiddenElements.forEach((el) => observer.observe(el));
 // Navigation Bar
 function getScrollThreshold(){
     const screenHeight = window.innerHeight;
-    if(screenHeight < 600){
-        return 25;
-    }
-    else if (screenHeight < 1000){
-        return 50;
+    if(screenHeight < 1000){
+        return 100;
     }
     else{
-        return 150;
+        return 200;
     }
 }
 
