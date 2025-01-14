@@ -222,6 +222,7 @@ section .container .right{
     }
     h2{
         font-size:14px;
+        color:pink;
     }
     p{
         font-size:10px;
