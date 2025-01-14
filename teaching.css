@@ -218,16 +218,16 @@ section .container .right{
     }
     /* Text */
     h1{
-        font-size:18px;
+        font-size:17px;
     }
     h2{
-        font-size:14px;
+        font-size:13px;
     }
     p{
-        font-size:10px;
+        font-size:9px;
     }
     .nav-link li a{
-        font-size:12px;
+        font-size:11px;
     }
     /* Navigation Bar */
     .nav-link li{
